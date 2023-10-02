@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CostCalculator {
+    public static Double COST_OF_DELIVERY = 150.0; //цена доставки в д.е.
     public static Double GLOBAL_DISCOUNT_FOR_PAY = 0.15; //15% скидка по карте
     public static Double calcTotal(ShoppingCart cart){
         double totalCost = 0.0;
@@ -49,9 +50,9 @@ public class CostCalculator {
         }
 
         if (isCard) {
-            return (calcTotal(cart) - calcTotal(cart)*GLOBAL_DISCOUNT_FOR_PAY);
+            return (calcTotal(cart) - calcTotal(cart)*GLOBAL_DISCOUNT_FOR_PAY + COST_OF_DELIVERY);
         }
 
-        return calcTotal(cart);
+        return calcTotal(cart) + COST_OF_DELIVERY;
     }
 }

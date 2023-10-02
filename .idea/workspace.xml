@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c82ac64c-e06f-40a4-b545-b7e3de5eeeb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/CostCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/CostCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/CostCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/ShopFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/ShopFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mySubTask/ShoppingCart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
