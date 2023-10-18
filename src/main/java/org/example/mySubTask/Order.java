@@ -25,8 +25,8 @@ public class Order {
 
     public static class OrderBuilder{
         private ShoppingCart cart;
-        private double totalCost;
-        private double totalCostWithDiscount;
+//        private double totalCost;
+//        private double totalCostWithDiscount;
         boolean isCard;
         public OrderBuilder(){
             cart = new ShoppingCart();
@@ -42,6 +42,10 @@ public class Order {
         }
         public Order build(){
             return new Order(cart, isCard);
+        }
+        public void resetConfig(){
+            cart = new ShoppingCart();
+            isCard = false;
         }
     }
 }
