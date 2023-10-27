@@ -11,7 +11,7 @@ import com.stripe.model.checkout.Session;
 @RestController
 @RequestMapping(value = "/payments")
 public class BuyController {
-    @Autowired
+
     private ShopFacade facade;
 
     @PostMapping("/create_session")
