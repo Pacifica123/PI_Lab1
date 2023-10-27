@@ -6,5 +6,6 @@ import java.util.List;
 
 
 public class Cart {
-    private List<CartItem> items; // Список товаров в корзине
+//    private List<CartItem> items; // Список товаров в корзине
+    Long id;
 }
