@@ -4,5 +4,8 @@ public record Order(
         Long id,
         String email,
         String cardNum,
-        String nameOwner
+        String nameOwner,
+        String paymentService,
+        Double costBefore,
+        Double costAfter
 ) { }
