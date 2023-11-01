@@ -6,24 +6,24 @@ import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
 
 public class StripePaymentAdapter implements PaymentAdapter {
-    private final String stripeSecretKey = "";
+    private final String stripeSecretKey = "sk_test_51O2CA5HyjWPuYVM61i1zpWEanVvjS4KFIlzITsspk83399CP8U1tjgFQfsTQrEsBzY4XVpIZ82fzSLfo4h7RvQFC00uIvgWrYn";
     private String url;
     private String successfulUrl;
     private String cancelUrl;
     @Override
-    public Session createPaymentSession(String successFilePath, String cancelFilePath, String filePath){
+    public Session createPaymentSession(String successFilePath, String cancelFilePath, String filePath, String priceId){
         // Stripe API
         try {
             // Создаем параметры для сессии платежа
             // (вроде разобрались..): разобраться с хостингом
             SessionCreateParams params = SessionCreateParams.builder()
                     .setMode(SessionCreateParams.Mode.PAYMENT)
-                    .setSuccessUrl("successFilePath")  // Замените на свой URL успешной оплаты
-                    .setCancelUrl("cancelFilePath")    // Замените на свой URL отмены оплаты
+                    .setSuccessUrl("http://localhost:8080/payments/ok")  // Замените на свой URL успешной оплаты
+                    .setCancelUrl("http://localhost:8080/payments/cancel")    // Замените на свой URL отмены оплаты
                     .addLineItem(
                             SessionCreateParams.LineItem.builder()
                                     .setQuantity(1L)
-                                    .setPrice("price_1O2rKBHyjWPuYVM6GnH3p5nn")  // Замените на свой идентификатор цены
+                                    .setPrice(priceId)
                                     .build())
                     .build();
 

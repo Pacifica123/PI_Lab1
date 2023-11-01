@@ -1,9 +1,7 @@
 package com.example.front_to_back.tools;
 
 import com.example.front_to_back.models.Product;
-import com.stripe.model.LineItem;
-
-import java.util.List;
+import com.stripe.model.Price;
 
 public class Discount {
     private Product p;
@@ -15,9 +13,18 @@ public class Discount {
     public void setDiscountPercent(Long discountPercent) {
         this.discountPercent = discountPercent;
     }
-    public Long returnFinalCost(){
-        LineItem s = (LineItem)(this.p.info());
-        // КОСТЫЛЬ ВАШЕМУ ВНИМАНИЮ:
-        return (s.getAmountTotal()*discountPercent/100);
+    public long returnFinalCost(Object info, String typePaymentService) throws Exception {
+//        LineItem s = (LineItem)(this.p.info());
+
+        try {
+            if(typePaymentService == "stripe"){
+                Price price = (Price) info;
+                // КОСТЫЛЬ ВАШЕМУ ВНИМАНИЮ:
+                return (price.getUnitAmount() * discountPercent / 100);
+            }
+        } catch (Exception e) {
+            throw new Exception("nooo!!!");
+        }
+        return -1;
     }
 }

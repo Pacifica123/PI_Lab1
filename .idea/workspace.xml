@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2063416c-292f-43ff-974d-7eee00f320ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cancel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/adapterImplements/StripePaymentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/adapterImplements/StripePaymentAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/controllers/BuyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/controllers/BuyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/PaymentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/PaymentAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/ShopFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/ShopFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/cancel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +28,8 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,19 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/a/Desktop/JProjects/Lab1_Task2/front_to_back/src/main/resources/templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/a/Desktop/JProjects/Lab1_Task2/front_to_back/src/main/resources/templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.front_to_back.models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
