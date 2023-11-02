@@ -17,10 +17,11 @@ public class Discount {
 //        LineItem s = (LineItem)(this.p.info());
 
         try {
-            if(typePaymentService == "stripe"){
+            if(typePaymentService.contains("stripe")){
                 Price price = (Price) info;
                 // КОСТЫЛЬ ВАШЕМУ ВНИМАНИЮ:
-                return (price.getUnitAmount() * discountPercent / 100);
+                Long a = price.getUnitAmount() - (price.getUnitAmount() * discountPercent / 100);
+                return a;
             }
         } catch (Exception e) {
             throw new Exception("nooo!!!");

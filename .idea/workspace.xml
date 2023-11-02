@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2063416c-292f-43ff-974d-7eee00f320ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cancel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/models/OrderBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/adapterImplements/StripePaymentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/adapterImplements/StripePaymentAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/controllers/BuyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/controllers/BuyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/models/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/Discount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/PaymentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/PaymentAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/ShopFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/front_to_back/tools/ShopFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/cancel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +22,8 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>

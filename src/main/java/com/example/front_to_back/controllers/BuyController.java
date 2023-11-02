@@ -40,7 +40,7 @@ public class BuyController {
         facade = new ShopFacade(priceId, paymentAdapter); // за сессию покупаем 1 товар
         String url = facade.getSuccessUrl();
         facade.calculateDiscount();
-        facade.createOrder();
+        facade.createOrder(countryRegion, nameOwner, cardNum, email);
         facade.BUY();
         ModelAndView mav = new ModelAndView();
         mav.setViewName("success.html");
