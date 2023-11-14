@@ -1,7 +1,5 @@
 package com.example.demo.models;
 
-import org.springframework.web.bind.annotation.ResponseStatus;
-
 public record Order(
         Long id,
         String email,
@@ -10,7 +8,8 @@ public record Order(
         String paymentService,
         Long costBefore,
         Long costAfter,
-        String productId
+        String productId,
+        String address
 ) {
     public class OrderBuilder{
         public OrderBuilder(){
@@ -24,6 +23,7 @@ public record Order(
         Long costBefore;
         Long costAfter;
         String productId;
+        String address;
 
         public void setEmail(String email) {
             this.email = email;
@@ -48,8 +48,12 @@ public record Order(
             this.productId = productId;
         }
 
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
         public Order build(){
-            return new Order(id, email, cardNum, nameOwner, paymentService, costBefore, costAfter, productId);
+            return new Order(id, email, cardNum, nameOwner, paymentService, costBefore, costAfter, productId, address);
         }
     }
 }

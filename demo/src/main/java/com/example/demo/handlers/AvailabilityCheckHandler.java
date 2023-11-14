@@ -6,6 +6,7 @@ import com.example.demo.models.Product;
 import org.springframework.stereotype.Component;
 
 @Component
+@org.springframework.core.annotation.Order(2)
 public class AvailabilityCheckHandler implements OrderHandler {
     @Override
     public boolean handle(Order o){
