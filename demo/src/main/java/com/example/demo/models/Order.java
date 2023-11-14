@@ -9,7 +9,8 @@ public record Order(
         String nameOwner,
         String paymentService,
         Long costBefore,
-        Long costAfter
+        Long costAfter,
+        String productId
 ) {
     public class OrderBuilder{
         public OrderBuilder(){
@@ -22,6 +23,7 @@ public record Order(
         String paymentService;
         Long costBefore;
         Long costAfter;
+        String productId;
 
         public void setEmail(String email) {
             this.email = email;
@@ -42,8 +44,12 @@ public record Order(
             this.paymentService = paymentService;
         }
 
+        public void setProductId(String productId) {
+            this.productId = productId;
+        }
+
         public Order build(){
-            return new Order(id, email, cardNum, nameOwner, paymentService, costBefore, costAfter);
+            return new Order(id, email, cardNum, nameOwner, paymentService, costBefore, costAfter, productId);
         }
     }
 }
