@@ -1,5 +1,7 @@
 package com.example.demo.MyDB;
 
+import com.example.demo.handlers.ProductNotifer;
+import com.example.demo.handlers.ProductObserved;
 import com.example.demo.models.Product;
 
 import java.util.HashMap;
@@ -16,5 +18,12 @@ public class ProductDB {
 
     public static Product getProductById(String productId) {
         return productDatabase.get(productId);
+    }
+    public static void updateProduct(String productId, Product p, ProductNotifer notifer){
+        Product existCurrent = productDatabase.get(productId);
+        if (existCurrent != null){
+            productDatabase.put(productId, p);
+            notifer.notifyObserver(p, "тут можно смотреть разницу и кидать что конкретно изменилось");
+        }
     }
 }
