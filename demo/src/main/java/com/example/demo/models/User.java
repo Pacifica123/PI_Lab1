@@ -9,7 +9,8 @@ public record User(
 ) {
     public class UserBuilder{
         public UserBuilder(){
-            this.Id = null;
+//            this.Id = null;
+            // TODO: автоинкремент айдишника
             this.role = Role.USER;
         }
         Long Id;

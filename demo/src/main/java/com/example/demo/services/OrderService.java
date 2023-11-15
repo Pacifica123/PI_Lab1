@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderService {
@@ -14,8 +15,13 @@ public class OrderService {
     public void processOrder(Order o){
         for (OrderHandler oh : orderHandlers){
             boolean res = oh.handle(o);
-            if (!res) { /* генерация ошибки.. */ }
+            if (!res) {
+                System.out.println("Не все проверки пройдены!");
+                return;
+                /* логика обработки непройденного заказа */
+            }
         }
+        System.out.println("Заказ №" + o.id() + " прошел все проверки.");
         /* Все проверки пройдены. */
     }
 }
