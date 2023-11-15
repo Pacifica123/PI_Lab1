@@ -12,11 +12,13 @@ import com.example.demo.services.OrderService;
 import com.stripe.model.ProductCollection;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
+
 
 		// ПРОВЕРКА НАБЛЮДАТЕЛЯ
 		//==============================
@@ -41,17 +43,17 @@ public class DemoApplication {
 		// допустим формируется новый заказ:
 		Order o1 = new Order(
 				1L,
-				"d6ftgy",
+				"d6ftgy", // несуществующая почта
 				"123456789",
 				"cwje",
 				"stripe",
 				1000L,
 				900L,
 				"productId1",
-				""
+				"адресс с кодом 1"
 		);
 		Order o2 = new Order(
-				1L,
+				2L,
 				"yellow@gmail.com",
 				"",
 				"cwje",
@@ -59,10 +61,10 @@ public class DemoApplication {
 				1000L,
 				900L,
 				"productId1",
-				""
+				""				// отсутствует адрес доставки
 		);
 		Order o3 = new Order(
-				1L,
+				3L,
 				"yellow@gmail.com",
 				"123456789",
 				"yyywicueh",
@@ -73,13 +75,15 @@ public class DemoApplication {
 				"адресс с кодом 1"
 		);
 		// Проверяем каэжый заказ по цепочке проверок
-		OrderService orderChecker = new OrderService();
+//		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+		OrderService orderChecker = SpringApplication.run(DemoApplication.class, args).getBean(OrderService.class);
 		orderChecker.processOrder(o1);
 		orderChecker.processOrder(o2);
 		orderChecker.processOrder(o3);
+
 		//==============================
 
-		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }

@@ -15,6 +15,7 @@ public class AuthenticationCheckHandler implements OrderHandler {
         if (u != null){
             return true;
         }
+        System.out.println("Не пройдена проверка в AuthenticationCheckHandler");
         return false; // Или false в случае ошибки.
     }
 }

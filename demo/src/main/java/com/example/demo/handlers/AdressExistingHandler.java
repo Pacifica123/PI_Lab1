@@ -14,6 +14,9 @@ public class AdressExistingHandler implements OrderHandler {
         // Логика проверки существования в БД указанного адреса доставки.
         String adress = order.address();
         Long a = AdressDB.getIdByAdress(adress);
+        if (a == null){
+            System.out.println("Не пройдена проверка в AdressExistingHandler");
+        }
         return a != null; // адресс доставки существует в БД или нет?
     }
 }

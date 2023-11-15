@@ -18,6 +18,7 @@ public class AvailabilityCheckHandler implements OrderHandler {
             return true; // товар есть и мы его взяли
         }
         else {
+            System.out.println("Не пройдена проверка в AvailabilityCheckHandler");
             return false; // товар отсутствует
         }
     }
